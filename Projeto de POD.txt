@@ -1,0 +1,6 @@
+- salvar mensagens não recebidas [BD]
+- salvar mensagens antigas [BD] 
+Obs.: milisegundos como sendo o ID das mensagens
+- arquivo xml: usuário, mensagem, data
+- fechar conexão com o usuário quando deslogar
+- implementar protocolo de comunicação
