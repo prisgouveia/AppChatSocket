@@ -6,14 +6,27 @@
 package br.edu.ifpb.pod.appchat.entity;
 
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Column;
+import javax.persistence.Id;
 
 /**
  *
- * @author João Marcos F <joaomarccos.ads@gmail.com>
+ * @author RODOLFO ROCHA
  */
+@Entity
 public class Message implements Comparable<Message>, Serializable{
+    
+    private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    
+    @Column(name = "Usuario")
     private String userName;
+    @Column(name = "Mensagem")
     private String msg;
 
     public Message(String userName, String msg) {

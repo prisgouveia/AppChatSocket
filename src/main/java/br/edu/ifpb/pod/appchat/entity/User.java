@@ -7,10 +7,12 @@ package br.edu.ifpb.pod.appchat.entity;
 
 import java.io.Serializable;
 
+
 /**
  *
  * @author João Marcos F <joaomarccos.ads@gmail.com>
  */
+
 public class User implements Serializable{    
     private String name;
 
